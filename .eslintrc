@@ -1,0 +1,83 @@
+{
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "parser": "babel-eslint",
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"]
+        }
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true,
+      "jest": true,
+      "jquery": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js", ".jsx"]
+        }
+      ],
+      "react/prop-types": 0,
+      "react/button-has-type": "off",
+      "react/no-array-index-key": "warn",
+      "operator-linebreak": "off",
+      "no-shadow": ["off", { "builtinGlobals": false, "hoist": "functions", "allow": [] }],
+      "prettier/prettier": [
+        "error",
+        {},
+        {
+          "usePrettierrc": true
+        }
+      ],
+      "camelcase": "warn",
+      "eqeqeq": "warn",
+      "no-use-before-define": [
+        "error",
+        {
+          "functions": true,
+          "classes": false,
+          "variables": true
+        }
+      ],
+      "prefer-arrow-callback": "error",
+      "prefer-const": "error",
+      "semi": ["error", "never"],
+      "import/prefer-default-export": "off",
+      "class-methods-use-this": "off",
+      "no-underscore-dangle": "off",
+      "max-classes-per-file": "off",
+      "no-console": ["error", { "allow": ["warn", "error"] }],
+      "one-var": "off",
+      "no-param-reassign": ["error", { "props": false }],
+      "no-plusplus": "off",
+      "react/state-in-constructor": "off",
+      "no-unused-expressions": "off",
+      "no-unused-vars": "warn",
+      "no-continue": "off",
+      "import/no-cycle": "warn",
+      "default-case": "off",
+      "no-return-assign": "off"
+    },
+    "globals": {
+      "window": true,
+      "document": true,
+      "localStorage": true,
+      "FormData": true,
+      "FileReader": true,
+      "Blob": true,
+      "navigator": true,
+      "Headers": true,
+      "Request": true,
+      "fetch": true
+    }
+  }
+  
